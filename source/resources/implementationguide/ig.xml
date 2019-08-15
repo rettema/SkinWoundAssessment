@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+	<id value="ig" />
+	<url value="http://hl7.org/fhir/us/skinwoundassessment/ImplementationGuide/ig"/>
+	<version value="0.2.0"/>
+	<name value="SkinWoundAssessment" />
+	<status value="active" />
+	<date value="2019-08-12"/>
+	<publisher value="HL7 International - Electronic Health Records Work Group"/>
+	<contact>
+		<!-- 0..* ContactDetail Contact details for the publisher -->
+		<telecom>
+			<system value="url"/>
+			<value value="https://confluence.hl7.org/display/EHR/Electronic+Health+Records+Work+Group"/>
+		</telecom>
+	</contact>
+	<copyright value="Used by permission of HL7 International, all rights reserved Creative Commons License"/>
+	<package>
+		<name value="Skin Wound Assessment" />
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/SkinWoundRelatedObservationsPanelExt"/>
+				<display value="Skin Wound Related Observations Panel Extension"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ClockFacePositionExt"/>
+				<display value="Clock Face Position Extension"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/MeasurementDeviceExt"/>
+				<display value="Measurement Device Extension"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/DistanceFromLandmarkMeasurementExt"/>
+				<display value="Distance From Landmark Measurement Extension"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/DistanceFromLandmarkExt"/>
+				<display value="Distance From Landmark Extension"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/SurfaceOrientationExt"/>
+				<display value="Surface Orientation Extension"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/SkinBodyLandmarkDescriptionExt"/>
+				<display value="Skin Body Landmark Description Extension"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/SkinBodyLandmarkOrientationExt"/>
+				<display value="Skin Body Landmark Orientation Extension"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/SkinUnderlyingAnatomicalStructureExt"/>
+				<display value="Skin Underlying Anatomical Structure Extension"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/BodyLocationOrientationExt"/>
+				<display value="Body Location Orientation Extension"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/BodyLocationQualifierExt"/>
+				<display value="Body Location Qualifier Extension"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/AnatomicLocationExt"/>
+				<display value="Anatomic Location Extension"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/BodySideExt"/>
+				<display value="Body Side Extension"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/SkinBodyLocationExt"/>
+				<display value="Skin Body Location Extension"/>
+			</sourceReference> 
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/EstimatedIndExt"/>
+				<display value="Estimated Indicator Extension"/>
+			</sourceReference> 
+		</resource>
+
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/WoundBedAppearance"/>
+				<display value="Wound Bed Appearance"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/WoundBedColor"/>
+				<display value="Wound Bed Color"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/WoundBed"/>
+				<display value="Wound Bed"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/WoundEdgeColor"/>
+				<display value="Wound Edge Color"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/WoundEdgeDescription"/>
+				<display value="Wound Edge Description"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/WoundEdge"/>
+				<display value="Wound Edge"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/WoundExudate"/>
+				<display value="Wound Exudate"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/WoundSize"/>
+				<display value="Wound Size"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/SkinWoundRelatedObservationsPanel"/>
+				<display value="Skin Wound Related Observations Panel"/>
+			</sourceReference>
+		</resource>
+
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/SkinWoundAssert"/>
+				<display value="Skin Wound Assertion"/>
+			</sourceReference>
+		</resource>
+
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/bodyLandmarkDescriptionVS"/>
+				<display value="Body Landmark Description value set"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/bodyLocationOrientationVS"/>
+				<display value="Body Location Orientation value set"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/bodyLocationQualifierVS"/>
+				<display value="Body Location Qualifier value set"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/bodySideVS"/>
+				<display value="Body Side value set"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/clockFacePositionVS"/>
+				<display value="Clock Face Position value set"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/presentAbsentVS"/>
+				<display value="Present Absent value set"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/qualitativeWoundDepthVS"/>
+				<display value="Qualitative Wound Depth value set"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/skinBodyLandmarkDescriptionVS"/>
+				<display value="Skin Body Landmark Description value set"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/skinWoundAnatomicLocationVS"/>
+				<display value="Skin Wound Anatomic Location value set"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/surfaceOrientationVS"/>
+				<display value="Surface Orientation value set"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/underlyingAnatomicalStructureVS"/>
+				<display value="Underlying Anatomical Structure value set"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/woundAnatomicLocationVS"/>
+				<display value="Wound Anatomic Location value set"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/woundBedAppearanceVS"/>
+				<display value="Wound Bed Appearance value set"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/woundBedColorVS"/>
+				<display value="Wound Bed Color value set"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/woundEdgeColorVS"/>
+				<display value="Wound Edge Color value set"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/woundEdgeDescriptionVS"/>
+				<display value="Wound Edge Description value set"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/woundExudateAmountDescriptionVS"/>
+				<display value="Wound Exudate Amount Description value set"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/woundMeasurementDeviceVS"/>
+				<display value="Wound Measurement Device value set"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/woundTypeVS"/>
+				<display value="Wound Type value set"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/yesNoVS"/>
+				<display value="Yes No value set"/>
+			</sourceReference>
+		</resource>
+
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="CapabilityStatement/client"/>
+				<display value="HSPC Skin Wound Assessment Client"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="CapabilityStatement/server"/>
+				<display value="HSPC Skin Wound Assessment server"/>
+			</sourceReference>
+		</resource>
+
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Condition/skinwoundassert-amend"/>
+				<display value="Condition Skin Wound Assert Amend example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Condition/skinwoundassert-example"/>
+				<display value="Condition Skin Wound Assert example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Condition/skinwoundassert-originate"/>
+				<display value="Condition Skin Wound Assert Originate example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Condition/skinwoundassert-receive"/>
+				<display value="Condition Skin Wound Assert Receive example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/skinwoundbedappearance-amend"/>
+				<display value="Observation Skin Wound Bed Appearance Amend example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/skinwoundbedappearance-example"/>
+				<display value="Observation Skin Wound Bed Appearance example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/skinwoundbedappearance-originate"/>
+				<display value="Observation Skin Wound Bed Appearance Originate example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/skinwoundbedappearance-receive"/>
+				<display value="Observation Skin Wound Bed Appearance Receive example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/skinwoundbedcolor-example"/>
+				<display value="Observation Skin Wound Bed Color example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/skinwoundbed-amend"/>
+				<display value="Observation Skin Wound Bed Amend example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/skinwoundbed-example"/>
+				<display value="Observation Skin Wound Bed example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/skinwoundbed-originate"/>
+				<display value="Observation Skin Wound Bed Originate example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/skinwoundbed-receive"/>
+				<display value="Observation Skin Wound Bed Receive example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/skinwoundedgecolor-example"/>
+				<display value="Observation Skin Wound Edge Color example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/skinwoundedgedescription-example"/>
+				<display value="Observation Skin Wound Edge Description example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/skinwoundedge-example"/>
+				<display value="Observation Skin Wound Edge example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/skinwoundrelatedobservationspanel-amend"/>
+				<display value="Observation Skin Wound Related Observations Panel Amend example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/skinwoundrelatedobservationspanel-example"/>
+				<display value="Observation Skin Wound Related Observations Panel example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/skinwoundrelatedobservationspanel-originate"/>
+				<display value="Observation Skin Wound Related Observations Panel Originate example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/skinwoundrelatedobservationspanel-receive"/>
+				<display value="Observation Skin Wound Related Observations Panel Receive example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/woundsize-example"/>
+				<display value="Observation Wound Size example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Patient/patient-example"/>
+				<display value="Patient example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Practitioner/practitioner-example"/>
+				<display value="Practitioner example"/>
+			</sourceReference>
+		</resource>
+    </package>
+	<!-- ============ Home Page =============== -->
+	<page>
+		<source value="index.html"/>
+		<title value="Home"/>
+		<kind value="page"/>
+		<format value="markdown"/>
+		<!-- ============ Guidance Page =============== -->
+		<page>
+			<source value="guidance.html"/>
+			<title value="Guidance"/>
+			<kind value="page"/>
+			<format value="markdown"/>
+		</page>
+		<!-- ============ Guidance Page =============== -->
+		<!-- ============ Use Cases Page =============== -->
+		<page>
+			<source value="usecases.html"/>
+			<title value="Use Cases"/>
+			<kind value="page"/>
+			<format value="markdown"/>
+		</page>
+		<!-- ============ Guidance Page =============== -->
+		<!-- ============ Profiles Page =============== -->
+		<page>
+			<source value="profiles.html"/>
+			<title value="Profiles and Extensions"/>
+			<kind value="page"/>
+			<format value="markdown"/>
+			<!-- ============ Profiles and examples=============== -->
+			<!-- insert profiles -->
+			<!-- ============ End Profiles and examples=============== -->
+			<!-- ============ Extensions and examples =============== -->
+			<!-- insert extensions -->
+			<!-- ============ End Extensions and examples =============== -->
+		</page>
+		<!-- ============ Terminology Page =============== -->
+		<page>
+			<source value="terminology.html"/>
+			<title value="Terminology"/>
+			<kind value="page"/>
+			<format value="markdown"/>
+			<!-- ============ ValueSet   =============== -->
+			<!-- insert valuesets -->
+			<!-- ============ End ValueSet   =============== -->
+		</page>
+		<!-- ============ Conformance Pages =============== -->
+		<page>
+			<source value="CapabilityStatement-server.html"/>
+			<title value="CapabilityStatement server"/>
+			<kind value="page"/>
+			<format value="markdown"/>
+		</page>
+		<page>
+			<source value="CapabilityStatement-client.html"/>
+			<title value="CapabilityStatement client"/>
+			<kind value="page"/>
+			<format value="markdown"/>
+		</page>
+		<!-- ============ End Conformance Pages =============== -->
+		<!-- ============ Security Page =============== -->
+		<page>
+			<source value="security.html"/>
+			<title value="Security"/>
+			<kind value="page"/>
+			<format value="markdown"/>
+		</page>
+		<!-- ============ Downloads Page =============== -->
+		<page>
+			<source value="downloads.html"/>
+			<title value="Downloads"/>
+			<kind value="page"/>
+			<format value="markdown"/>
+		</page>
+		<!-- ============ Table of Contents =============== -->
+		<page>
+			<source value="toc.html"/>
+			<title value="Table of Contents"/>
+			<kind value="page"/>
+			<format value="html"/>
+		</page>
+	</page>
+</ImplementationGuide>

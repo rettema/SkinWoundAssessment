@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<id value="SkinWoundRelatedObservationsPanelExt"/>
+	<url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/SkinWoundRelatedObservationsPanelExt"/>
+	<version value="0.2.0"/>
+	<name value="SkinWoundRelatedObservationsPanelExt"/>
+	<title value="Skin Wound Related Observations Panel Extension"/>
+	<status value="draft"/>
+	<date value="2019-08-12"/>
+	<publisher value="CIMI"/>
+	<description value="The Skin Wound Related Observations Panel reference."/>
+	<fhirVersion value="3.0.1"/>
+	<kind value="complex-type"/>
+	<abstract value="false"/>
+	<contextType value="resource"/>
+	<context value="Observation"/>
+	<context value="Condition"/>
+	<context value="BodySite"/>
+	<type value="Extension"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Extension:SkinWoundRelatedObservationsPanelExt">
+			<path value="Extension"/>
+			<sliceName value="SkinWoundRelatedObservationsPanelExt"/>
+			<definition value="The Skin Wound Related Observations Panel reference."/>
+			<min value="0"/>
+			<max value="1"/>
+			<isModifier value="false"/>
+		</element>
+		<element id="Extension:SkinWoundRelatedObservationsPanelExt.url">
+			<path value="Extension.url"/>
+			<fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/SkinWoundRelatedObservationsPanelExt"/>
+		</element>
+		<element id="Extension:SkinWoundRelatedObservationsPanelExt.valueReference">
+			<path value="Extension.valueReference"/>
+			<type>
+				<code value="Reference"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/SkinWoundRelatedObservationsPanel"/>
+			</type>
+		</element>
+	</differential>
+</StructureDefinition>

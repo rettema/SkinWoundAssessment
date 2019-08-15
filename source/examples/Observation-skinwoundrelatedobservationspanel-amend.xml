@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="skinwoundrelatedobservationspanel-amend"/>
+	<meta>
+		<versionId value="2"/>
+		<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/SkinWoundRelatedObservationsPanel"/>
+	</meta>
+	<identifier>
+		<system value="https://acme.org/identifiers"/>
+		<value value="wat-scenario-skin-wound-related-observations-panel-amend"/>
+	</identifier>
+	<status value="amended"/>
+	<category>
+		<coding>
+			<system value="http://hl7.org/fhir/observation-category"/>
+			<code value="exam"/>
+			<display value="Exam"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="39135-9"/>
+			<display value="Wound assessment panel"/>
+		</coding>
+		<text value="Wound assessment panel"/>
+	</code>
+	<subject>
+		<reference value="Patient/patient-example"/>
+	</subject>
+	<effectiveDateTime value="2016-08-15"/>
+	<performer>
+		<reference value="Practitioner/practitioner-example"/>
+	</performer>
+	<related>
+		<type value="has-member"/>
+		<target>
+			<reference value="Observation/skinwoundbed-amend"/>
+			<display value="Skin Wound Bed Amend Example"/>
+		</target>
+	</related>
+</Observation>

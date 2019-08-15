@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="WoundBedColor"/>
+    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundBedColor"/>
+    <name value="WoundBedColor"/>
+    <title value="Wound Bed Color"/>
+    <status value="draft"/>
+	<date value="2019-08-12"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="Wound Bed Color describes the color of the wound bed."/>
+    <fhirVersion value="3.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:WoundBedColor">
+            <path value="Observation"/>
+			<short value="Wound Bed Color"/>
+            <definition value="Wound Bed Color describes the color of the wound bed."/>
+        </element>
+        <element id="Observation:WoundBedColor.code">
+            <path value="Observation.code"/>
+        </element>
+		<element id="Observation:WoundBedColor.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:WoundBedColor.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:WoundBedColor.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="39132-6"/>
+		</element>
+		<element id="Observation:WoundBedColor.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="Color of Wound base"/>
+		</element>
+        <element id="Observation:WoundBedColor.valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept"/>
+            <short value="Wound Bed Color code"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSetReference>
+                    <reference value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundBedColorVS"/>
+                </valueSetReference>
+            </binding>
+        </element>
+
+		<element id="Observation:WoundBedColor.component">
+			<path value="Observation.component"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="code.coding.code"/>
+				</discriminator>
+				<ordered value="false"/>
+				<rules value="open"/>
+			</slicing>
+			<min value="0"/>
+			<max value="*"/>
+		</element>
+
+		<element id="Observation:WoundBedColor.component:WoundBedColorArea">
+			<path value="Observation.component"/>
+			<sliceName value="WoundBedColorArea"/>
+			<short value="Wound Bed Color Area"/>
+            <definition value="Wound Bed Color Area describes how much of the wound appears in a certain color."/>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="Observation:WoundBedColor.component.code:WoundBedColorArea">
+			<path value="Observation.component.code"/>
+		</element>
+		<element id="Observation:WoundBedColor.component.code.coding:WoundBedColorArea">
+			<path value="Observation.component.code.coding"/>
+		</element>
+		<element id="Observation:WoundBedColor.component.code.coding.system:WoundBedColorArea">
+			<path value="Observation.component.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:WoundBedColor.component.code.coding.code:WoundBedColorArea">
+			<path value="Observation.component.code.coding.code"/>
+			<fixedCode value="89255-4"/>
+		</element>
+		<element id="Observation:WoundBedColor.component.code.coding.display:WoundBedColorArea">
+			<path value="Observation.component.code.coding.display"/>
+			<fixedString value="Wound bed area identified by color/Area of wound bed"/>
+		</element>
+		<element id="Observation:WoundBedColor.component.valueQuantity:WoundBedColorArea">
+			<path value="Observation.component.valueQuantity"/>
+			<type>
+				<code value="Quantity"/>
+			</type>
+		</element>
+		<element id="Observation:WoundBedColor.component.valueQuantity.system:WoundBedColorArea">
+			<path value="Observation.component.valueQuantity.system"/>
+			<type>
+				<code value="uri"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/uri"/>
+			</type>
+			<fixedUri value="http://unitsofmeasure.org"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+		</element>
+		<element id="Observation:WoundBedColor.component.valueQuantity.code:WoundBedColorArea">
+			<path value="Observation.component.valueQuantity.code"/>
+			<type>
+				<code value="code"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/code"/>
+			</type>
+			<fixedCode value="%"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+		</element>
+    </differential>
+</StructureDefinition>
+

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="WoundExudate"/>
+    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudate"/>
+    <name value="WoundExudate"/>
+    <title value="Wound Exudate"/>
+    <status value="draft"/>
+	<date value="2019-08-12"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="Wound Exudate describes the color, volume, appearance, odor, and qualitative amount of substance issuing from a wound."/>
+    <fhirVersion value="3.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:WoundExudate">
+            <path value="Observation"/>
+			<short value="Wound Exudate"/>
+            <definition value="Wound Exudate describes the color, volume, appearance, odor, and qualitative amount of substance issuing from a wound."/>
+        </element>
+		<element id="Observation:WoundExudate.extension:EstimatedInd">
+			<path value="Observation.extension"/>
+			<short value="Estimated Indicator"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/EstimatedIndExt"/>
+			</type>
+		</element>
+        <element id="Observation:WoundExudate.code">
+            <path value="Observation.code"/>
+        </element>
+		<element id="Observation:WoundExudate.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:WoundExudate.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:WoundExudate.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="89259-6"/>
+		</element>
+		<element id="Observation:WoundExudate.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="Presence of wound exudate"/>
+		</element>
+        <element id="Observation:WoundExudate.valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept"/>
+            <short value="Present/Absent"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSetReference>
+                    <reference value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/presentAbsentVS"/>
+                </valueSetReference>
+            </binding>
+        </element>
+
+		<element id="Observation:WoundExudate.component">
+			<path value="Observation.component"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="code.coding.code"/>
+				</discriminator>
+				<ordered value="false"/>
+				<rules value="open"/>
+			</slicing>
+			<min value="0"/>
+			<max value="*"/>
+		</element>
+
+		<element id="Observation:WoundExudate.component:WoundExudateAmountDescription">
+			<path value="Observation.component"/>
+			<sliceName value="WoundExudateAmountDescription"/>
+			<short value="Wound Exudate Amount Description"/>
+            <definition value="Wound Exudate Amount Description describes an estimated volume of wound drainage."/>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="Observation:WoundExudate.component.code:WoundExudateAmountDescription">
+			<path value="Observation.component.code"/>
+		</element>
+		<element id="Observation:WoundExudate.component.code.coding:WoundExudateAmountDescription">
+			<path value="Observation.component.code.coding"/>
+		</element>
+		<element id="Observation:WoundExudate.component.code.coding.system:WoundExudateAmountDescription">
+			<path value="Observation.component.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:WoundExudate.component.code.coding.code:WoundExudateAmountDescription">
+			<path value="Observation.component.code.coding.code"/>
+			<fixedCode value="39116-9"/>
+		</element>
+		<element id="Observation:WoundExudate.component.code.coding.display:WoundExudateAmountDescription">
+			<path value="Observation.component.code.coding.display"/>
+			<fixedString value="Drainage amount of Wound"/>
+		</element>
+		<element id="Observation:WoundExudate.component.valueCodeableConcept:WoundExudateAmountDescription">
+			<path value="Observation.component.valueCodeableConcept"/>
+			<type>
+				<code value="CodeableConcept"/>
+			</type>
+			<binding>
+                <strength value="preferred"/>
+                <valueSetReference>
+                    <reference value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundExudateAmountDescriptionVS"/>
+                </valueSetReference>
+            </binding>
+		</element>
+
+		<element id="Observation:WoundExudate.component:WoundExudateVolume">
+			<path value="Observation.component"/>
+			<sliceName value="WoundExudateVolume"/>
+			<short value="Wound Exudate Volume"/>
+            <definition value="Wound Exudate Volume is the measured amount of wound drainage."/>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="Observation:WoundExudate.component.code:WoundExudateVolume">
+			<path value="Observation.component.code"/>
+		</element>
+		<element id="Observation:WoundExudate.component.code.coding:WoundExudateVolume">
+			<path value="Observation.component.code.coding"/>
+		</element>
+		<element id="Observation:WoundExudate.component.code.coding.system:WoundExudateVolume">
+			<path value="Observation.component.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:WoundExudate.component.code.coding.code:WoundExudateVolume">
+			<path value="Observation.component.code.coding.code"/>
+			<fixedCode value="72291-8"/>
+		</element>
+		<element id="Observation:WoundExudate.component.code.coding.display:WoundExudateVolume">
+			<path value="Observation.component.code.coding.display"/>
+			<fixedString value="Drainage amount from device of Exudate from wound"/>
+		</element>
+		<element id="Observation:WoundExudate.component.valueQuantity:WoundExudateVolume">
+			<path value="Observation.component.valueQuantity"/>
+			<type>
+				<code value="Quantity"/>
+			</type>
+		</element>
+		<element id="Observation:WoundExudate.component.valueQuantity.system:WoundExudateVolume">
+			<path value="Observation.component.valueQuantity.system"/>
+			<type>
+				<code value="uri"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/uri"/>
+			</type>
+			<fixedUri value="http://unitsofmeasure.org"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+		</element>
+		<element id="Observation:WoundExudate.component.valueQuantity.code:WoundExudateVolume">
+			<path value="Observation.component.valueQuantity.code"/>
+			<type>
+				<code value="code"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/code"/>
+			</type>
+			<fixedCode value="mL"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+		</element>
+    </differential>
+</StructureDefinition>
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<id value="DistanceFromLandmarkExt"/>
+	<url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/DistanceFromLandmarkExt"/>
+	<version value="0.2.0"/>
+	<name value="DistanceFromLandmarkExt"/>
+	<title value="Distance From Landmark Extension"/>
+	<status value="draft"/>
+	<date value="2019-08-12"/>
+	<publisher value="CIMI"/>
+	<description value="The distance in cm a certain observation is made from a body landmark."/>
+	<fhirVersion value="3.0.1"/>
+	<kind value="complex-type"/>
+	<abstract value="false"/>
+	<contextType value="resource"/>
+	<context value="Observation"/>
+	<context value="Condition"/>
+	<context value="BodySite"/>
+	<type value="Extension"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Extension:DistanceFromLandmarkExt">
+			<path value="Extension"/>
+			<sliceName value="DistanceFromLandmarkExt"/>
+			<definition value="The distance in cm a certain observation is made from a body landmark."/>
+			<min value="0"/>
+			<max value="1"/>
+			<isModifier value="false"/>
+		</element>
+		<element id="Extension:DistanceFromLandmarkExt.extension:MeasurementDeviceExt">
+			<path value="Extension.extension"/>
+			<sliceName value="MeasurementDeviceExt"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/MeasurementDeviceExt"/>
+			</type>
+		</element>
+		<element id="Extension:DistanceFromLandmarkExt.extension:DistanceFromLandmarkMeasurementExt">
+			<path value="Extension.extension"/>
+			<sliceName value="MeasurementDeviceExt"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/DistanceFromLandmarkMeasurementExt"/>
+			</type>
+		</element>
+		<element id="Extension:DistanceFromLandmarkExt.url">
+			<path value="Extension.url"/>
+			<fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/DistanceFromLandmarkExt"/>
+		</element>
+		<element id="Extension:DistanceFromLandmarkExt.value[x]">
+			<path value="Extension.value[x]"/>
+			<min value="0"/>
+			<max value="0"/>
+		</element>
+	</differential>
+</StructureDefinition>

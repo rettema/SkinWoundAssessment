@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="SkinWoundRelatedObservationsPanel"/>
+    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/SkinWoundRelatedObservationsPanel"/>
+    <name value="SkinWoundRelatedObservationsPanel"/>
+    <title value="Skin Wound Related Observations Panel"/>
+    <status value="draft"/>
+	<date value="2019-08-12"/>
+    <publisher value="CIMI"/>
+    <description value="Observations that are linked to a wound."/>
+    <fhirVersion value="3.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:SkinWoundRelatedObservationsPanel">
+            <path value="Observation"/>
+            <definition value="Observations that are linked to a wound"/>
+        </element>
+        <element id="Observation:SkinWoundRelatedObservationsPanel.code">
+            <path value="Observation.code"/>
+        </element>
+		<element id="Observation:SkinWoundRelatedObservationsPanel.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:SkinWoundRelatedObservationsPanel.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:SkinWoundRelatedObservationsPanel.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="39135-9"/>
+		</element>
+		<element id="Observation:SkinWoundRelatedObservationsPanel.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="Wound assessment panel"/>
+		</element>
+		<element id="Observation:SkinWoundRelatedObservationsPanel.value[x]">
+			<path value="Observation.value[x]"/>
+			<min value="0"/>
+			<max value="0"/>
+		</element>
+		<element id="Observation:SkinWoundRelatedObservationsPanel.related">
+			<path value="Observation.related"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="target.resolve()"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+		</element>
+		<element id="Observation:SkinWoundRelatedObservationsPanel.related:WoundBed">
+			<path value="Observation.related"/>
+			<sliceName value="WoundBed"/>
+			<short value="Wound Bed"/>
+			<min value="0"/>
+			<max value="*"/>
+		</element>
+		<element id="Observation:SkinWoundRelatedObservationsPanel.related.type:WoundBed">
+			<path value="Observation.related.type"/>
+			<fixedCode value="has-member"/>
+		</element>
+		<element id="Observation:SkinWoundRelatedObservationsPanel.related.target:WoundBed">
+			<path value="Observation.related.target"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundBed"/>
+			</type>
+		</element>
+		<element id="Observation:SkinWoundRelatedObservationsPanel.related:WoundEdge">
+			<path value="Observation.related"/>
+			<sliceName value="WoundEdge"/>
+			<short value="Wound Edge"/>
+			<min value="0"/>
+			<max value="*"/>
+		</element>
+		<element id="Observation:SkinWoundRelatedObservationsPanel.related.type:WoundEdge">
+			<path value="Observation.related.type"/>
+			<fixedCode value="has-member"/>
+		</element>
+		<element id="Observation:SkinWoundRelatedObservationsPanel.related.target:WoundEdge">
+			<path value="Observation.related.target"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundEdge"/>
+			</type>
+		</element>
+		<element id="Observation:SkinWoundRelatedObservationsPanel.related:WoundExudate">
+			<path value="Observation.related"/>
+			<sliceName value="WoundExudate"/>
+			<short value="Wound Exudate"/>
+			<min value="0"/>
+			<max value="*"/>
+		</element>
+		<element id="Observation:SkinWoundRelatedObservationsPanel.related:WoundExudate.type">
+			<path value="Observation.related.type"/>
+			<fixedCode value="has-member"/>
+		</element>
+		<element id="Observation:SkinWoundRelatedObservationsPanel.related.target:WoundExudate">
+			<path value="Observation.related.target"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudate"/>
+			</type>
+		</element>
+		<element id="Observation:SkinWoundRelatedObservationsPanel.related:WoundSize">
+			<path value="Observation.related"/>
+			<sliceName value="WoundSize"/>
+			<short value="Wound Size"/>
+			<min value="0"/>
+			<max value="*"/>
+		</element>
+		<element id="Observation:SkinWoundRelatedObservationsPanel.related:WoundSize.type">
+			<path value="Observation.related.type"/>
+			<fixedCode value="has-member"/>
+		</element>
+		<element id="Observation:SkinWoundRelatedObservationsPanel.related.target:WoundSize">
+			<path value="Observation.related.target"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundSize"/>
+			</type>
+		</element>
+    </differential>
+</StructureDefinition>

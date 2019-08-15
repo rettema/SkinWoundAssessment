@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+	<id value="SkinWoundAssert"/>
+	<url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/SkinWoundAssert"/>
+	<name value="SkinWoundAssert"/>
+	<title value="Skin Wound Assert"/>
+	<status value="draft"/>
+	<date value="2019-08-12"/>
+	<publisher value="HSPC"/>
+	<description value="Wound Assert is an assertion model used when the condition exists. Wound is a kind of skin alteration including breaks in skin or injury under or to skin wounds (e.g., pressure injury by stage)"/>
+	<fhirVersion value="3.0.1"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Condition"/>
+	<baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Condition:SkinWoundAssert">
+			<path value="Condition"/>
+			<short value="Wound Assert"/>
+			<definition value="Wound Assert is an assertion model used when the condition exists. Wound is a kind of skin alteration including breaks in skin or injury under or to skin wounds (e.g., pressure injury by stage)"/>
+		</element>
+		<element id="Condition:SkinWoundAssert.extension:SkinWoundRelatedObservationsPanelExt">
+			<path value="Condition.extension"/>
+			<sliceName value="SkinWoundRelatedObservationsPanelExt"/>
+			<short value="Skin Wound Related Observations Panel"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/SkinWoundRelatedObservationsPanelExt"/>
+			</type>
+		</element>
+		<element id="Condition:SkinWoundAssert.extension:SkinBodyLocationExt">
+			<path value="Condition.extension"/>
+			<sliceName value="SkinBodyLocationExt"/>
+			<short value="Skin Body Location"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/SkinBodyLocationExt"/>
+			</type>
+		</element>
+		<element id="Condition:SkinWoundAssert.identifier">
+			<path value="Condition.identifier"/>
+			<short value="To be used for the wound ID"/>
+		</element>
+		<element id="Condition:SkinWoundAssert.clinicalStatus">
+			<path value="Condition.clinicalStatus"/>
+			<short value="Clinical Status"/>
+			<comment value="Key code for this model: ClinicalStatus_KEY_CODE"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="code"/>
+			</type>
+		</element>
+		<element id="Condition:SkinWoundAssert.verificationStatus">
+			<path value="Condition.verificationStatus"/>
+			<short value="Verification Status"/>
+			<comment value="Key code for this model: VerificationStatus_KEY_CODE"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="code"/>
+			</type>
+		</element>
+		<element id="Condition:SkinWoundAssert.code:woundType">
+			<path value="Condition.code"/>
+			<short value="woundType"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+			</type>
+			<binding>
+				<strength value="preferred"/>
+				<valueSetReference>
+					<reference value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundTypeVS"/>
+				</valueSetReference>
+			</binding>
+		</element>
+		<element id="Condition:SkinWoundAssert.bodySite">
+			<path value="Condition.bodySite"/>
+			<short value="Body Location"/>
+			<comment value="Key code for this model: BodyLocation_KEY_CODE"/>
+			<min value="0"/>
+			<max value="0"/>
+		</element>
+		<element id="Condition:SkinWoundAssert.abatement[x]:abatementDate">
+			<path value="Condition.abatement[x]"/>
+			<short value="Abatement Date"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="dateTime"/>
+			</type>
+		</element>
+		<element id="Condition:SkinWoundAssert.onset[x]:dateOfOnset">
+			<path value="Condition.onset[x]"/>
+			<short value="Onset Date"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="dateTime"/>
+			</type>
+		</element>
+	</differential>
+</StructureDefinition>
