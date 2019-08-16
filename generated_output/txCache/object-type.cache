@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/object-type",
+  "code" : "2"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/object-type\" is not known for the code \"2\"; The code provided (http://hl7.org/fhir/object-type#2) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

@@ -1,5 +1,5 @@
 ---
-title: Use Case - Originate and Retain
+title: Use Case - Originate and Amend
 layout: default
 active: guidance
 topofpage: true
@@ -90,14 +90,14 @@ Example FHIR resource instances illustrating the expected contents of the WAT an
 - [Observation-skinwoundbedappearance-originate](Observation-skinwoundbedappearance-originate.html)
 
 **_2. Evidence of Originate/Retain Record Entry_**
-- AuditEvent-Condition-skinwoundassert-originate
-- AuditEvent-Observation-skinwoundrelatedobservationspanel-originate
-- AuditEvent-Observation-skinwoundbed-originate
-- AuditEvent-Observation-skinwoundbedappearance-originate
-- Provenance-Condition-skinwoundassert-originate
-- Provenance-Observation-skinwoundrelatedobservationspanel-originate
-- Provenance-Observation-skinwoundbed-originate
-- Provenance-Observation-skinwoundbedappearance-originate
+- [AuditEvent-skinwoundassert-originate-auditevent](AuditEvent-skinwoundassert-originate-auditevent.html)
+- AuditEvent-skinwoundrelatedobservationspanel-originate-auditevent
+- AuditEvent-skinwoundbed-originate-auditevent
+- AuditEvent-skinwoundbedappearance-originate-auditevent
+- [Provenance-skinwoundassert-originate-provenance](Provenance-skinwoundassert-originate-provenance.html)
+- Provenance-skinwoundrelatedobservationspanel-originate-provenance
+- Provenance-skinwoundbed-originate-provenance
+- Provenance-skinwoundbedappearance-originate-provenance
 
 **_3. Amend Record Entry Content_**
 - [Condition-skinwoundassert-amend](Condition-skinwoundassert-amend.html)
@@ -106,18 +106,18 @@ Example FHIR resource instances illustrating the expected contents of the WAT an
 - [Observation-skinwoundbedappearance-amend](Observation-skinwoundbedappearance-amend.html)
 
 **_4. Evidence of Record Entry Ammendment Event_**
-- AuditEvent-Condition-skinwoundassert-amend
-- AuditEvent-Observation-skinwoundrelatedobservationspanel-amend
-- AuditEvent-Observation-skinwoundbed-amend
-- AuditEvent-Observation-skinwoundbedappearance-amend
-- Provenance-Condition-skinwoundassert-amend
-- Provenance-Observation-skinwoundrelatedobservationspanel-amend
-- Provenance-Observation-skinwoundbed-amend
-- Provenance-Observation-skinwoundbedappearance-amend
+- [AuditEvent-skinwoundassert-amend-auditevent](AuditEvent-skinwoundassert-amend-auditevent.html)
+- AuditEvent-skinwoundrelatedobservationspanel-amend-auditevent
+- AuditEvent-skinwoundbed-amend-auditevent
+- AuditEvent-skinwoundbedappearance-amend-auditevent
+- [Provenance-skinwoundassert-amend-provenance](Provenance-skinwoundassert-amend-provenance.html)
+- Provenance-skinwoundrelatedobservationspanel-amend-provenance
+- Provenance-skinwoundbed-amend-provenance
+- Provenance-skinwoundbedappearance-amend-provenance
 
 <p>&nbsp;</p>
 
-## Implementation Details
+## Validation Test Details
 **Validation of Wound Assessment Template (WAT) data**
 
 _See [Use Case - Search](usecase-search.html): Query and retrieval of the Wound Assessment Template (WAT) data_

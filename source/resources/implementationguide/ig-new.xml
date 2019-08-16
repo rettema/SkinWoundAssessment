@@ -423,6 +423,30 @@
     </resource>
     <resource>
       <reference>
+        <reference value="AuditEvent/skinwoundassert-amend-auditevent"/>
+        <display value="AuditEvent Skin Wound Assert Amend example"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AuditEvent/skinwoundassert-originate-auditevent"/>
+        <display value="AuditEvent Skin Wound Assert Originate example"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AuditEvent/skinwoundassert-receive-auditevent"/>
+        <display value="AuditEvent Skin Wound Assert Receive example"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Condition/skinwoundassert-amend"/>
         <display value="Condition Skin Wound Assert Amend example"/>
       </reference>
@@ -601,6 +625,30 @@
       <reference>
         <reference value="Practitioner/practitioner-example"/>
         <display value="Practitioner example"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Provenance/skinwoundassert-amend-provenance"/>
+        <display value="Provenance Skin Wound Assert Amend example"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Provenance/skinwoundassert-originate-provenance"/>
+        <display value="Provenance Skin Wound Assert Originate example"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Provenance/skinwoundassert-receive-provenance"/>
+        <display value="Provenance Skin Wound Assert Receive example"/>
       </reference>
       <exampleBoolean value="true"/>
       <groupingId value="p1"/>

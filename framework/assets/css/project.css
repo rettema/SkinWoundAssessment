@@ -444,6 +444,12 @@ h6:not([nocount^="true"]):before{
   padding: 0;
 }
 
+div#publish-box {
+  background-color: yellow;
+  border:1px solid maroon;
+  padding: 5px;
+}
+
 p#publish-box {
   background-color: yellow;
   border:1px solid maroon;

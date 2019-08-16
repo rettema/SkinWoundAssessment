@@ -262,6 +262,15 @@
       "base": "CapabilityStatement-server.html",
       "source": "capabilitystatement/capabilitystatement-server.xml"
     },
+    "AuditEvent/skinwoundassert-amend-auditevent": {
+      "base": "AuditEvent-skinwoundassert-amend-auditevent.html"
+    },
+    "AuditEvent/skinwoundassert-originate-auditevent": {
+      "base": "AuditEvent-skinwoundassert-originate-auditevent.html"
+    },
+    "AuditEvent/skinwoundassert-receive-auditevent": {
+      "base": "AuditEvent-skinwoundassert-receive-auditevent.html"
+    },
     "Condition/skinwoundassert-amend": {
       "base": "Condition-skinwoundassert-amend.html"
     },
@@ -330,6 +339,15 @@
     },
     "Practitioner/practitioner-example": {
       "base": "Practitioner-practitioner-example.html"
+    },
+    "Provenance/skinwoundassert-amend-provenance": {
+      "base": "Provenance-skinwoundassert-amend-provenance.html"
+    },
+    "Provenance/skinwoundassert-originate-provenance": {
+      "base": "Provenance-skinwoundassert-originate-provenance.html"
+    },
+    "Provenance/skinwoundassert-receive-provenance": {
+      "base": "Provenance-skinwoundassert-receive-provenance.html"
     }
   }
 }

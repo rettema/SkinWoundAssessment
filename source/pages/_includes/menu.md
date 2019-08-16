@@ -13,7 +13,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="usecase-originate.html">Use Case - Originate and Retain</a>
+        <a href="usecase-originate.html">Use Case - Originate and Amend</a>
       </li>
       <li>
         <a href="usecase-receive.html">Use Case - Receive and Retain</a>

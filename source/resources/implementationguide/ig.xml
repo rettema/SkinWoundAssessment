@@ -354,6 +354,27 @@
 		<resource>
 			<example value="true"/>
 			<sourceReference>
+				<reference value="AuditEvent/skinwoundassert-amend-auditevent"/>
+				<display value="AuditEvent Skin Wound Assert Amend example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="AuditEvent/skinwoundassert-originate-auditevent"/>
+				<display value="AuditEvent Skin Wound Assert Originate example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="AuditEvent/skinwoundassert-receive-auditevent"/>
+				<display value="AuditEvent Skin Wound Assert Receive example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
 				<reference value="Condition/skinwoundassert-amend"/>
 				<display value="Condition Skin Wound Assert Amend example"/>
 			</sourceReference>
@@ -510,6 +531,27 @@
 			<sourceReference>
 				<reference value="Practitioner/practitioner-example"/>
 				<display value="Practitioner example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Provenance/skinwoundassert-amend-provenance"/>
+				<display value="Provenance Skin Wound Assert Amend example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Provenance/skinwoundassert-originate-provenance"/>
+				<display value="Provenance Skin Wound Assert Originate example"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Provenance/skinwoundassert-receive-provenance"/>
+				<display value="Provenance Skin Wound Assert Receive example"/>
 			</sourceReference>
 		</resource>
     </package>

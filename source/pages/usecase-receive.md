@@ -83,18 +83,18 @@ Example FHIR resource instances illustrating the expected contents of the WAT an
 - [Observation-skinwoundbedappearance-receive](Observation-skinwoundbedappearance-receive.html)
 
 **_2. Evidence of Receive/Retain Record Entry_**
-- AuditEvent-Condition-skinwoundassert-receive
-- AuditEvent-Observation-skinwoundrelatedobservationspanel-receive
-- AuditEvent-Observation-skinwoundbed-receive
-- AuditEvent-Observation-skinwoundbedappearance-receive
-- Provenance-Condition-skinwoundassert-receive
-- Provenance-Observation-skinwoundrelatedobservationspanel-receive
-- Provenance-Observation-skinwoundbed-receive
-- Provenance-Observation-skinwoundbedappearance-receive
+- [AuditEvent-skinwoundassert-receive-auditevent](AuditEvent-skinwoundassert-receive-auditevent.html)
+- AuditEvent-skinwoundrelatedobservationspanel-receive-auditevent
+- AuditEvent-skinwoundbed-receive-auditevent
+- AuditEvent-skinwoundbedappearance-receive-auditevent
+- [Provenance-skinwoundassert-receive-provenance](Provenance-skinwoundassert-receive-provenance.html)
+- Provenance-skinwoundrelatedobservationspanel-receive-provenance
+- Provenance-skinwoundbed-receive-provenance
+- Provenance-skinwoundbedappearance-receive-provenance
 
 <p>&nbsp;</p>
 
-## Implementation Details
+## Validation Test Details
 **Validation of Wound Assessment Template (WAT) data**
 
 _See [Use Case - Search](usecase-search.html): Query and retrieval of the Wound Assessment Template (WAT) data_

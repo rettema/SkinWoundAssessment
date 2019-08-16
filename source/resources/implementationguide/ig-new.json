@@ -428,6 +428,30 @@
     },
     {
       "reference" : {
+        "reference" : "AuditEvent/skinwoundassert-amend-auditevent",
+        "display" : "AuditEvent Skin Wound Assert Amend example"
+      },
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "AuditEvent/skinwoundassert-originate-auditevent",
+        "display" : "AuditEvent Skin Wound Assert Originate example"
+      },
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "AuditEvent/skinwoundassert-receive-auditevent",
+        "display" : "AuditEvent Skin Wound Assert Receive example"
+      },
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
         "reference" : "Condition/skinwoundassert-amend",
         "display" : "Condition Skin Wound Assert Amend example"
       },
@@ -606,6 +630,30 @@
       "reference" : {
         "reference" : "Practitioner/practitioner-example",
         "display" : "Practitioner example"
+      },
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "Provenance/skinwoundassert-amend-provenance",
+        "display" : "Provenance Skin Wound Assert Amend example"
+      },
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "Provenance/skinwoundassert-originate-provenance",
+        "display" : "Provenance Skin Wound Assert Originate example"
+      },
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "Provenance/skinwoundassert-receive-provenance",
+        "display" : "Provenance Skin Wound Assert Receive example"
       },
       "exampleBoolean" : true,
       "groupingId" : "p1"
