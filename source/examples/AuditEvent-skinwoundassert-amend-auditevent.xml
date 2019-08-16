@@ -80,9 +80,9 @@
 			<display value="System Object"/>
 		</type>
 		<lifecycle>
-			<system value="http://hl7.org/fhir/dicom-audit-lifecycle"/>
-			<code value="3"/>
-			<display value="Amendment"/>
+			<system value="http://hl7.org/fhir/iso-21089-lifecycle"/>
+			<code value="2"/>
+			<display value="Amend (Update) - Lifeycle Event"/>
 		</lifecycle>
 	</entity>
 </AuditEvent>

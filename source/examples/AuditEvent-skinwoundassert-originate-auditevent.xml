@@ -80,9 +80,9 @@
 			<display value="System Object"/>
 		</type>
 		<lifecycle>
-			<system value="http://hl7.org/fhir/dicom-audit-lifecycle"/>
+			<system value="http://hl7.org/fhir/iso-21089-lifecycle"/>
 			<code value="1"/>
-			<display value="Origination / Creation"/>
+			<display value="Originate/Retain - Record Lifecyle Event"/>
 		</lifecycle>
 	</entity>
 </AuditEvent>

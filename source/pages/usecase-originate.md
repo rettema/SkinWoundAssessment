@@ -1,5 +1,5 @@
 ---
-title: Use Case - Originate and Amend
+title: Use Case - Originate then Amend
 layout: default
 active: guidance
 topofpage: true
@@ -16,11 +16,14 @@ us_r3: http://hl7.org/fhir/us/core/
 
 ##  Introduction
 
-Wound Assessment Template (WAT) Scenario - Use Case - Originate and Retain (HL7 FHIR Connectathon 22, Sep 2019, Atlanta).
+Wound Assessment Template (WAT) Scenario - Use Case - Originate and Retain (null), then Amend (populate with clinical content) (HL7 FHIR Connectathon 22, Sep 2019, Atlanta).
 
 Demonstrate how an EHR actor incorporates the [FHIR Record Lifecycle Event (RLE) Implementation Guide (IG)](http://hl7.org/fhir/STU3/ehrsrle/ehrsrle.html) processing of the Originate/Retain and Amend Record Content events when first recording the Wound Assessement Template data.
 
 The focus of this use case is the verification and validation of recording and storage of the FHIR Record Lifecycle Event data represented by the FHIR Resource Types of [AuditEvent](http://hl7.org/fhir/STU3/ehrsrle/ehrsrle-auditevent.html) and [Provenance](http://hl7.org/fhir/STU3/ehrsrle/ehrsrle-provenance.html).
+
+* This represents the first trial definition of incorporating the RLE Originate and Retain event and RLE Amend event into the the WAT data creation. This is the simplest way for the local system to demonstrate that the "populate with clinical content" step began from an "all null clinical content" state. This also establishes that the null-state template may pre-exist on the local system for any interval (seconds to years) prior to its "Amend" to add an instance of assessment.
+* For future work, we may identify the complexity of demonstrating that the null-state version could be empty also of patient demographics, thus the null state could be used as the initial state for all subsequent patient-specific captures as Amend events to the all-null original.
 
 <p>&nbsp;</p>
 
@@ -50,10 +53,11 @@ This use case defines the FHIR Record Lifecycle Event processes performed by an 
 The following is the expected behavior of the EHR actor system when implementing the _FHIR RLE Events_ when first recording the Wound Assessment Template data:
 
 **_1. Originate/Retain Record Entry_**
-The creation of the the Wound Assessment Template data as empty FHIR resource instances of
+The creation of the the Wound Assessment Template (WAT) data as _empty_ FHIR resource instances of
 * The [SkinWoundAssert (STU3)] profiled **Condition**
 * The [SkinWoundRelatedObservationsPanel (STU3)] profiled **Observation**
   * The various Wound profiled related **Observations**
+* <div id="publish-box">Clarification - the <i>empty</i> WAT FHIR resource are expected to be minimally populated where only mandatory/required elements are assigned with known or default values. Please see the example resources in the section <i>1. Originate/Retain Record Entry</i> below.</div>
 
 **_2. Evidence of Originate/Retain Record Entry_**
 The creation of the corresponding FHIR RLE [AuditEvent](http://hl7.org/fhir/STU3/ehrsrle/ehrsrle-auditevent.html) and [Provenance](http://hl7.org/fhir/STU3/ehrsrle/ehrsrle-provenance.html) resources related to #1.
@@ -67,10 +71,14 @@ The update of the initial data contents in the Wound Assessment Template data FH
 **_4. Evidence of Record Entry Ammendment Event_**
 The creation of the corresponding FHIR RLE [AuditEvent](http://hl7.org/fhir/STU3/ehrsrle/ehrsrle-auditevent.html) and [Provenance](http://hl7.org/fhir/STU3/ehrsrle/ehrsrle-provenance.html) resources related to #3.
 
+<p>&nbsp;</p>
+
 ### WAT Data Storage
 The expectation for the EHR actor system is that all of the above RLE processes will be implemented as a single transaction. This will result in the EHR actor's (FHIR) data repository storing two (2) versions the WAT data FHIR resources:
 * #1 - empty created version 1 instances, then
 * #3 - the updated current version 2 instances
+
+<p>&nbsp;</p>
 
 ### RLE Data Storage
 The expectation here is that the generated RLE data FHIR instances will be:
